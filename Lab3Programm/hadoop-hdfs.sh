@@ -33,11 +33,14 @@ hdfs dfs -rm -r -f ${HDFS_BASE_OUTPUT_SORTED_DIR}_*
 hdfs dfs -mkdir -p $HDFS_INPUT_DIR
 hdfs dfs -put -f $LOCAL_INPUT_DIR/* $HDFS_INPUT_DIR/
 
-REDUCERS_ARRAY=(1 4 12 36)
+REDUCERS_ARRAY=(1 4 10 30)
 
 for reducers in "${REDUCERS_ARRAY[@]}"; do
     HDFS_OUTPUT_DIR="${HDFS_BASE_OUTPUT_DIR}_reducers_${reducers}"
     HDFS_OUTPUT_SORTED_DIR="${HDFS_BASE_OUTPUT_SORTED_DIR}_reducers_${reducers}"
+
+    hdfs dfs -rm -r -f $HDFS_OUTPUT_DIR
+    hdfs dfs -rm -r -f $HDFS_OUTPUT_SORTED_DIR
 
     echo "Starting with $reducers reducers"
     hadoop jar $JAR_FILE $DRIVER_CLASS $HDFS_INPUT_DIR $HDFS_OUTPUT_DIR $HDFS_OUTPUT_SORTED_DIR $reducers
@@ -48,9 +51,9 @@ for reducers in "${REDUCERS_ARRAY[@]}"; do
     {
         echo "With $reducers reducers"
         echo ""
-        cat $TEMP_FILE
+        echo "            Category    ;             Revenue;            Quantity;"
         echo ""
-        echo "Reducers=$reducers"
+        cat $TEMP_FILE
         echo ""
         echo ""
     } >> $FINAL_REPORT

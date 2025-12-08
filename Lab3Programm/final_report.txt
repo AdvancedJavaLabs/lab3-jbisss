@@ -1,104 +1,104 @@
 With 1 reducers
 
-clothing	;4.56030217199E9;911487
-video games	;4.5601083075E9;913326
-baby products	;4.54143536225E9;907186
-beauty products	;4.53387432785E9;906417
-gardening tools	;4.53188083774E9;905841
-automotive	;4.52986131074E9;904962
-music instruments	;4.51229446614E9;902389
-furniture	;4.50398676316E9;900244
-electronics	;4.49752663104E9;903266
-pet supplies	;4.48874173038E9;896724
-stationery	;4.4817949124E9;898265
-home appliances	;4.47388836173E9;895815
-sports equipment	;4.46938781234E9;894287
-groceries	;4.46691523097E9;895470
-footwear	;4.46557498336E9;894424
-jewelry	;4.46382367079E9;893980
-office equipment	;4.46356494738E9;892370
-toys	;4.46245365412E9;892741
-books	;4.45762082595E9;890948
-health & wellness	;4.45408289249E9;890475
+            Category    ;             Revenue;            Quantity;
 
-Reducers=1
+            clothing	;     4560302171.9860;              911487;
+         video games	;     4560108307.4950;              913326;
+       baby products	;     4541435362.2510;              907186;
+     beauty products	;     4533874327.8490;              906417;
+     gardening tools	;     4531880837.7360;              905841;
+          automotive	;     4529861310.7390;              904962;
+   music instruments	;     4512294466.1370;              902389;
+           furniture	;     4503986763.1620;              900244;
+         electronics	;     4497526631.0390;              903266;
+        pet supplies	;     4488741730.3820;              896724;
+          stationery	;     4481794912.3950;              898265;
+     home appliances	;     4473888361.7340;              895815;
+    sports equipment	;     4469387812.3360;              894287;
+           groceries	;     4466915230.9700;              895470;
+            footwear	;     4465574983.3610;              894424;
+             jewelry	;     4463823670.7900;              893980;
+    office equipment	;     4463564947.3810;              892370;
+                toys	;     4462453654.1190;              892741;
+               books	;     4457620825.9530;              890948;
+   health & wellness	;     4454082892.4910;              890475;
 
 
 With 4 reducers
 
-video games	;4.5601083075E9;913326
-baby products	;4.54143536225E9;907186
-furniture	;4.50398676316E9;900244
-home appliances	;4.47388836173E9;895815
-sports equipment	;4.46938781234E9;894287
-music instruments	;4.51229446614E9;902389
-stationery	;4.48179491239E9;898265
-toys	;4.46245365412E9;892741
-clothing	;4.56030217199E9;911487
-beauty products	;4.53387432785E9;906417
-gardening tools	;4.53188083774E9;905841
-automotive	;4.52986131074E9;904962
-health & wellness	;4.45408289249E9;890475
-electronics	;4.49752663104E9;903266
-pet supplies	;4.48874173038E9;896724
-groceries	;4.46691523097E9;895470
-footwear	;4.46557498336E9;894424
-jewelry	;4.46382367079E9;893980
-office equipment	;4.46356494738E9;892370
-books	;4.45762082595E9;890948
+            Category    ;             Revenue;            Quantity;
 
-Reducers=4
-
-
-With 12 reducers
-
-video games	;4.5601083075E9;913326
-automotive	;4.52986131074E9;904962
-footwear	;4.46557498336E9;894424
-jewelry	;4.46382367079E9;893980
-baby products	;4.54143536225E9;907186
-home appliances	;4.47388836173E9;895815
-sports equipment	;4.46938781234E9;894287
-music instruments	;4.51229446614E9;902389
-beauty products	;4.53387432785E9;906417
-gardening tools	;4.53188083774E9;905841
-health & wellness	;4.45408289249E9;890475
-pet supplies	;4.48874173038E9;896724
-books	;4.45762082595E9;890948
-furniture	;4.50398676316E9;900244
-stationery	;4.48179491239E9;898265
-toys	;4.46245365412E9;892741
-clothing	;4.56030217199E9;911487
-electronics	;4.49752663104E9;903266
-groceries	;4.46691523097E9;895470
-office equipment	;4.46356494738E9;892370
-
-Reducers=12
+            clothing	;     4560302171.9860;              911487;
+         video games	;     4560108307.4950;              913326;
+       baby products	;     4541435362.2510;              907186;
+     beauty products	;     4533874327.8490;              906417;
+     gardening tools	;     4531880837.7360;              905841;
+          automotive	;     4529861310.7390;              904962;
+   music instruments	;     4512294466.1370;              902389;
+           furniture	;     4503986763.1620;              900244;
+         electronics	;     4497526631.0390;              903266;
+        pet supplies	;     4488741730.3820;              896724;
+          stationery	;     4481794912.3950;              898265;
+     home appliances	;     4473888361.7340;              895815;
+    sports equipment	;     4469387812.3360;              894287;
+           groceries	;     4466915230.9700;              895470;
+            footwear	;     4465574983.3610;              894424;
+             jewelry	;     4463823670.7900;              893980;
+    office equipment	;     4463564947.3810;              892370;
+                toys	;     4462453654.1190;              892741;
+               books	;     4457620825.9530;              890948;
+   health & wellness	;     4454082892.4910;              890475;
 
 
-With 36 reducers
+With 10 reducers
 
-video games	;4.5601083075E9;913326
-automotive	;4.52986131074E9;904962
-baby products	;4.54143536225E9;907186
-home appliances	;4.47388836173E9;895815
-sports equipment	;4.46938781234E9;894287
-gardening tools	;4.53188083774E9;905841
-health & wellness	;4.45408289249E9;890475
-toys	;4.46245365412E9;892741
-footwear	;4.46557498336E9;894424
-beauty products	;4.53387432785E9;906417
-pet supplies	;4.48874173038E9;896724
-furniture	;4.50398676316E9;900244
-electronics	;4.49752663104E9;903266
-office equipment	;4.46356494738E9;892370
-jewelry	;4.46382367079E9;893980
-music instruments	;4.51229446614E9;902389
-stationery	;4.4817949124E9;898265
-books	;4.45762082595E9;890948
-clothing	;4.56030217199E9;911487
-groceries	;4.46691523097E9;895470
+            Category    ;             Revenue;            Quantity;
 
-Reducers=36
+            clothing	;     4560302171.9860;              911487;
+         video games	;     4560108307.4950;              913326;
+       baby products	;     4541435362.2510;              907186;
+     beauty products	;     4533874327.8490;              906417;
+     gardening tools	;     4531880837.7360;              905841;
+          automotive	;     4529861310.7390;              904962;
+   music instruments	;     4512294466.1370;              902389;
+           furniture	;     4503986763.1620;              900244;
+         electronics	;     4497526631.0390;              903266;
+        pet supplies	;     4488741730.3820;              896724;
+          stationery	;     4481794912.3950;              898265;
+     home appliances	;     4473888361.7340;              895815;
+    sports equipment	;     4469387812.3360;              894287;
+           groceries	;     4466915230.9700;              895470;
+            footwear	;     4465574983.3610;              894424;
+             jewelry	;     4463823670.7900;              893980;
+    office equipment	;     4463564947.3810;              892370;
+                toys	;     4462453654.1190;              892741;
+               books	;     4457620825.9530;              890948;
+   health & wellness	;     4454082892.4910;              890475;
+
+
+With 30 reducers
+
+            Category    ;             Revenue;            Quantity;
+
+            clothing	;     4560302171.9860;              911487;
+         video games	;     4560108307.4950;              913326;
+       baby products	;     4541435362.2510;              907186;
+     beauty products	;     4533874327.8490;              906417;
+     gardening tools	;     4531880837.7360;              905841;
+          automotive	;     4529861310.7390;              904962;
+   music instruments	;     4512294466.1370;              902389;
+           furniture	;     4503986763.1620;              900244;
+         electronics	;     4497526631.0390;              903266;
+        pet supplies	;     4488741730.3820;              896724;
+          stationery	;     4481794912.3950;              898265;
+     home appliances	;     4473888361.7340;              895815;
+    sports equipment	;     4469387812.3360;              894287;
+           groceries	;     4466915230.9700;              895470;
+            footwear	;     4465574983.3610;              894424;
+             jewelry	;     4463823670.7900;              893980;
+    office equipment	;     4463564947.3810;              892370;
+                toys	;     4462453654.1190;              892741;
+               books	;     4457620825.9530;              890948;
+   health & wellness	;     4454082892.4910;              890475;
 
 

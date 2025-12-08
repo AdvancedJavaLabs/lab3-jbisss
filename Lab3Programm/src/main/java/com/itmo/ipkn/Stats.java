@@ -1,13 +1,9 @@
 package com.itmo.ipkn;
 
-import com.itmo.ipkn.util.RevenueQuantityMapper;
-import com.itmo.ipkn.util.RevenueQuantityReducer;
-import com.itmo.ipkn.util.SortMapper;
-import com.itmo.ipkn.util.SortReducer;
+import com.itmo.ipkn.util.*;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -17,6 +13,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Stats {
+
+    private static final int REDUCERS_FOR_SORT_JOB = 1;
 
     public static void main(String[] args) throws Exception {
         long start = System.currentTimeMillis();
@@ -44,16 +42,18 @@ public class Stats {
         job2.setMapperClass(SortMapper.class);
         job2.setReducerClass(SortReducer.class);
 
-        job2.setMapOutputKeyClass(DoubleWritable.class);
+        job2.setMapOutputKeyClass(Text.class);
         job2.setMapOutputValueClass(Text.class);
 
         job2.setOutputKeyClass(Text.class);
         job2.setOutputValueClass(Text.class);
 
+        job2.setSortComparatorClass(DescendingTextComparator.class);
+
         FileInputFormat.addInputPath(job2, new Path(args[2]));
         FileOutputFormat.setOutputPath(job2, new Path(args[3]));
 
-        job2.setNumReduceTasks(numReducersJob);
+        job2.setNumReduceTasks(REDUCERS_FOR_SORT_JOB);
 
         boolean waitForCompletion = job2.waitForCompletion(true);
 
