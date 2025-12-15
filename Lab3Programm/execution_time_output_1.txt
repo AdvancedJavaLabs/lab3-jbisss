@@ -1,0 +1,1 @@
+Total execution time for 1 reducers: 22279 ms
