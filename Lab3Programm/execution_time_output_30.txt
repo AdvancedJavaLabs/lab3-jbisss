@@ -1,1 +1,1 @@
-Total execution time for 30 reducers: 18300 ms
+Total execution time for 30 reducers: 26208 ms

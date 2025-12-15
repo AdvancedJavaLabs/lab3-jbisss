@@ -17,7 +17,7 @@ public class SortMapper extends Mapper<Object, Text, Text, Text> {
         String rev = parts[1];
         int qty = Integer.parseInt(parts[2]);
 
-        System.out.println("!!!!!!!!!" + rev);
+        // System.out.println("!!!!!!!!!" + rev);
         revenue.set(rev);
         category.set(cat.trim() + ";" + rev + ";" + qty);
 
